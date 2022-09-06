@@ -1,0 +1,162 @@
+@startuml
+annotation java.lang.Override
+annotation java.lang.SuppressWarnings
+class BOE.BOEAdvancedEncryptionStandard
+class BOE.BoeServer
+class BOE.BoeServerListener
+class Blockchain.Block
+class Blockchain.Blockchain
+class EntityClientSSL.GUIClient
+class GUI.GUIAdvancedEncryptionStandard
+class GUI.GUILogin
+class GUI.GUITransactions
+class TemporalObjects.TempBlock
+class ValidatorServerSSL1.Node
+class ValidatorServerSSL1.NodeAdvancedEncryptionStandard
+class ValidatorServerSSL1.NodeListener
+class ValidatorServerSSL1.SpreadProcess
+class ValidatorServerSSL2.Node
+class ValidatorServerSSL2.NodeAdvancedEncryptionStandard
+class ValidatorServerSSL2.NodeListener
+class ValidatorServerSSL2.SpreadProcess
+class java.awt.Color
+class java.io.BufferedReader
+class java.io.BufferedWriter
+class java.io.File
+class java.io.FileOutputStream
+class java.io.FileWriter
+class java.io.IOException
+class java.io.InputStreamReader
+class java.io.OutputStream
+class java.io.PrintWriter
+class java.lang.Long
+class java.lang.Thread
+class java.math.BigInteger
+class java.net.InetAddress
+class java.net.MalformedURLException
+class java.net.Socket
+class java.net.URI
+class java.net.URISyntaxException
+class java.net.URL
+class java.net.URLConnection
+class java.net.UnknownHostException
+class java.security.MessageDigest
+class java.security.NoSuchAlgorithmException
+class java.security.cert.X509Certificate
+class java.util.ArrayList
+class java.util.Date
+class java.util.List
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.crypto.spec.SecretKeySpec
+class javax.net.ssl.SSLServerSocket
+class javax.net.ssl.SSLServerSocketFactory
+class javax.net.ssl.SSLSocket
+class javax.swing.JFrame
+class javax.swing.SwingConstants
+interface java.io.Serializable
+BOE.BOEAdvancedEncryptionStandard ..> java.util.logging.Level
+BOE.BOEAdvancedEncryptionStandard ..> java.util.logging.Logger
+BOE.BOEAdvancedEncryptionStandard ..> javax.crypto.spec.SecretKeySpec
+BOE.BoeServer ..> java.io.IOException
+BOE.BoeServer ..> java.net.InetAddress
+BOE.BoeServer ..> java.net.Socket
+BOE.BoeServer ..> java.net.UnknownHostException
+BOE.BoeServer ..> java.util.logging.Level
+BOE.BoeServer ..> java.util.logging.Logger
+BOE.BoeServer ..> javax.net.ssl.SSLServerSocket
+BOE.BoeServer ..> javax.net.ssl.SSLServerSocketFactory
+BOE.BoeServer ..> javax.net.ssl.SSLSocket
+BOE.BoeServerListener ..> TemporalObjects.TempBlock
+BOE.BoeServerListener --|> java.lang.Thread
+BOE.BoeServerListener ..> java.util.ArrayList
+Blockchain.Block ..> java.lang.Long
+Blockchain.Block ..> java.security.MessageDigest
+Blockchain.Block ..> java.security.NoSuchAlgorithmException
+Blockchain.Block ..> java.util.Date
+Blockchain.Block --|> java.io.Serializable
+Blockchain.Blockchain ..> java.util.ArrayList
+Blockchain.Blockchain ..> java.util.List
+Blockchain.Blockchain --|> java.io.Serializable
+EntityClientSSL.GUIClient ..> TemporalObjects.TempBlock
+EntityClientSSL.GUIClient ..> java.math.BigInteger
+EntityClientSSL.GUIClient ..> java.security.cert.X509Certificate
+EntityClientSSL.GUIClient ..> java.util.ArrayList
+GUI.GUIAdvancedEncryptionStandard ..> java.util.logging.Level
+GUI.GUIAdvancedEncryptionStandard ..> java.util.logging.Logger
+GUI.GUIAdvancedEncryptionStandard ..> javax.crypto.spec.SecretKeySpec
+GUI.GUILogin ..> java.lang.SuppressWarnings
+GUI.GUILogin ..> EntityClientSSL.GUIClient
+GUI.GUILogin ..> TemporalObjects.TempBlock
+GUI.GUILogin ..> java.awt.Color
+GUI.GUILogin --|> javax.swing.JFrame
+GUI.GUITransactions ..> java.lang.Override
+GUI.GUITransactions ..> java.lang.SuppressWarnings
+GUI.GUITransactions ..> EntityClientSSL.GUIClient
+GUI.GUITransactions ..> TemporalObjects.TempBlock
+GUI.GUITransactions ..> java.awt.Color
+GUI.GUITransactions ..> java.io.BufferedReader
+GUI.GUITransactions ..> java.io.BufferedWriter
+GUI.GUITransactions ..> java.io.File
+GUI.GUITransactions ..> java.io.FileOutputStream
+GUI.GUITransactions ..> java.io.FileWriter
+GUI.GUITransactions ..> java.io.IOException
+GUI.GUITransactions ..> java.io.InputStreamReader
+GUI.GUITransactions ..> java.io.OutputStream
+GUI.GUITransactions ..> java.io.PrintWriter
+GUI.GUITransactions ..> java.lang.Thread
+GUI.GUITransactions ..> java.net.MalformedURLException
+GUI.GUITransactions ..> java.net.URI
+GUI.GUITransactions ..> java.net.URISyntaxException
+GUI.GUITransactions ..> java.net.URL
+GUI.GUITransactions ..> java.net.URLConnection
+GUI.GUITransactions ..> java.util.ArrayList
+GUI.GUITransactions ..> java.util.Date
+GUI.GUITransactions ..> java.util.logging.Level
+GUI.GUITransactions ..> java.util.logging.Logger
+GUI.GUITransactions --|> javax.swing.JFrame
+GUI.GUITransactions ..> javax.swing.SwingConstants
+TemporalObjects.TempBlock --|> java.io.Serializable
+ValidatorServerSSL1.Node ..> java.io.IOException
+ValidatorServerSSL1.Node ..> java.net.InetAddress
+ValidatorServerSSL1.Node ..> java.net.Socket
+ValidatorServerSSL1.Node ..> java.net.UnknownHostException
+ValidatorServerSSL1.Node ..> java.util.logging.Level
+ValidatorServerSSL1.Node ..> java.util.logging.Logger
+ValidatorServerSSL1.Node ..> javax.net.ssl.SSLServerSocket
+ValidatorServerSSL1.Node ..> javax.net.ssl.SSLServerSocketFactory
+ValidatorServerSSL1.Node ..> javax.net.ssl.SSLSocket
+ValidatorServerSSL1.NodeAdvancedEncryptionStandard ..> java.util.logging.Level
+ValidatorServerSSL1.NodeAdvancedEncryptionStandard ..> java.util.logging.Logger
+ValidatorServerSSL1.NodeAdvancedEncryptionStandard ..> javax.crypto.spec.SecretKeySpec
+ValidatorServerSSL1.NodeListener ..> Blockchain.Block
+ValidatorServerSSL1.NodeListener ..> Blockchain.Blockchain
+ValidatorServerSSL1.NodeListener ..> TemporalObjects.TempBlock
+ValidatorServerSSL1.NodeListener --|> java.lang.Thread
+ValidatorServerSSL1.NodeListener ..> java.util.ArrayList
+ValidatorServerSSL1.SpreadProcess ..> Blockchain.Blockchain
+ValidatorServerSSL1.SpreadProcess --|> java.lang.Thread
+ValidatorServerSSL1.SpreadProcess ..> java.math.BigInteger
+ValidatorServerSSL1.SpreadProcess ..> java.security.cert.X509Certificate
+ValidatorServerSSL2.Node ..> java.io.IOException
+ValidatorServerSSL2.Node ..> java.net.InetAddress
+ValidatorServerSSL2.Node ..> java.net.Socket
+ValidatorServerSSL2.Node ..> java.net.UnknownHostException
+ValidatorServerSSL2.Node ..> java.util.logging.Level
+ValidatorServerSSL2.Node ..> java.util.logging.Logger
+ValidatorServerSSL2.Node ..> javax.net.ssl.SSLServerSocket
+ValidatorServerSSL2.Node ..> javax.net.ssl.SSLServerSocketFactory
+ValidatorServerSSL2.Node ..> javax.net.ssl.SSLSocket
+ValidatorServerSSL2.NodeAdvancedEncryptionStandard ..> java.util.logging.Level
+ValidatorServerSSL2.NodeAdvancedEncryptionStandard ..> java.util.logging.Logger
+ValidatorServerSSL2.NodeAdvancedEncryptionStandard ..> javax.crypto.spec.SecretKeySpec
+ValidatorServerSSL2.NodeListener ..> Blockchain.Block
+ValidatorServerSSL2.NodeListener ..> Blockchain.Blockchain
+ValidatorServerSSL2.NodeListener ..> TemporalObjects.TempBlock
+ValidatorServerSSL2.NodeListener --|> java.lang.Thread
+ValidatorServerSSL2.NodeListener ..> java.util.ArrayList
+ValidatorServerSSL2.SpreadProcess ..> Blockchain.Blockchain
+ValidatorServerSSL2.SpreadProcess --|> java.lang.Thread
+ValidatorServerSSL2.SpreadProcess ..> java.math.BigInteger
+ValidatorServerSSL2.SpreadProcess ..> java.security.cert.X509Certificate
+@enduml

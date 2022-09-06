@@ -1,0 +1,14 @@
+F-20210901-001,10,08/09/2021,A12345678,alfredojh@aytomadrid.es,B12345678,bernardo.perez@ferrovial.com,*
+F-20210901-002,10,08/09/2021,B12345678,bernardo.perez@ferrovial.com,A12345678,alfredojh@aytomadrid.es,*
+F-20210901-003,10,08/09/2021,C12345678,carlosjh@aytovillalba.com,A12345678,alfredojh@aytomadrid.es,*
+F-20210901-004,10,08/09/2021,A12345678,alfredojh@aytomadrid.es,B12345678,bernardo.perez@ferrovial.com,*
+F-20210901-005,10,08/09/2021,B12345678,bernardo.perez@ferrovial.com,B12345678,bernardo.perez@ferrovial.com,*
+F-20210901-006,10,08/09/2021,B12345678,bernardo.perez@ferrovial.com,B12345678,bernardo.perez@ferrovial.com,*
+F-20210901-007,10,08/09/2021,B12345678,bernardo.perez@ferrovial.com,C12345678,carlosjh@aytovillalba.com,*
+F-20210901-008,10,09/09/2021,D12345678,danielgomez@fcc.com,A12345678,alfredojh@aytomadrid.es,*
+F-20210901-009,10,09/09/2021,A12345678,alfredojh@aytomadrid.es,C12345678,carlosjh@aytovillalba.com,*
+F-20210901-010,100,09/09/2021,B12345678,bernardo.perez@ferrovial.com,D12345678,danielgomez@fcc.com,*
+F-20210901-011,100,09/09/2021,B12345678,bernardo.perez@ferrovial.com,D12345678,danielgomez@fcc.com,*
+F-20210901-012,100,09/09/2021,D12345678,danielgomez@fcc.com,B12345678,bernardo.perez@ferrovial.com,*
+F-20210901-013,100,09/09/2021,D12345678,danielgomez@fcc.com,B12345678,bernardo.perez@ferrovial.com,*
+F-20210901-014,100,09/09/2021,D12345678,danielgomez@fcc.com,C12345678,carlosjh@aytovillalba.com,*
